@@ -46,12 +46,13 @@
 
       <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
       <div class="logo d-block d-lg-none">
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid logo-img"></a>
+        <img onclick="dark()" src="assets/img/logo.png" alt="" class="img-fluid logo-img">
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul class="nav-inner">
-          <li class="active"><a href="index.html">Home</a></li>
+          <!-- <li class="active"><a href="index.html">Home</a></li> -->
+          
           <!-- <li class="drop-down"><a href="">About</a>
             <ul>
               <li><a href="#about">About Us</a></li>
@@ -68,12 +69,13 @@
               </li>
             </ul>
           </li> -->
-          <li><a href="#services">Services</a></li>
-
-          <li class="nav-logo"><a href="index.html"><img style="width: 90px;" src="assets/img/logo.png" alt="" class="img-fluid"></a></li>
-
+          <li><a href="#">Home</a></li>
           <li><a href="#portfolio">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
+          
+          <li class="nav-logo"><img onclick="dark()" style="width: 90px;" src="assets/img/logo.png" alt="" class="img-fluid"></li>
+
+          <li><a href="#team">Execom</a></li>
+          <li><a href="#">ISTE ZONE</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -114,6 +116,7 @@
         </div>
 
       </div>
+      
     </section><!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
@@ -223,6 +226,14 @@
         </div>
 
       </div>
+      <center>
+          <a href="events.html" class="button12">
+          <em> </em>   
+           <span>
+            View More
+           </span>
+       </a>
+      </center> 
     </section><!-- End Portfolio Section -->
 
 
@@ -293,6 +304,12 @@
         </div>
 
       </div>
+      <center><a href="execom.html" class="button12">
+        <em> </em>   
+         <span>
+           View More
+           </span>
+       </a></center> 
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -410,6 +427,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+function dark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 </body>
 
